@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+:root{
+    --body-color: #03051c;
+    --resalt-color: #34B0BE;
+    --title-color: #FFF;
+    --text-color: #D1CECA;
+}
+body{
+    background-color: var(--body-color);
+}
+
+/*Reciclables*/
+.center{
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+}
+.center2{
+    margin-top: 40px;
+}
+.center2 > h2{
+    color: var(--resalt-color);
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Navegador*/
+nav{
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 999;
+}
+nav i{
+    margin-right: 10px;
+    font-size: 24px;
+    color: var(--title-color);
+    padding: 10px;
+}
+.nav-links{
+    width: 100%;
+    height: 95vh;
+    background-color: var(--body-color);
+    position: fixed;
+    top: 4vh;
+    margin-right: -110%;
+    transition: 0.5s;
+}
+.nav-links ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-links ul li a{
+    display: block;
+    color: var(--title-color);
+    padding: 15px 20px;
+    transition: all 0.2s ease-in-out;
+} 
+.nav-links ul li a:hover{
+    color: var(--resalt-color);
+}
+
+/*Header*/
+header{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-title-1 h1{
+    font-size: 28px;
+    color: var(--title-color);
+}
+.header-title-1 h1 span{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--resalt-color);
+}
+.header-title-1 h3{
+    width: 140px;
+    font-size: 16px;
+    color: var(--title-color);
+    padding: 10px 0;
+    border-top: 2px solid var(--title-color);
+    margin-top: 10px;
+}
+.header-title-2 h3{
+    font-size: 18px;
+    color: var(--title-color);
+}
+.header-title-2 h3 span{
+    font-weight: 600;
+    color: var(--resalt-color);
+}
+.header-title-2 ul{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.header-title-2 ul li a{
+    color: #2a2b3d;
+    font-size: 24px;
+    background-color: var(--title-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+.header-icons{
+    width: 95%;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #2a2b3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header-icon{
+    width: 60px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: var(--title-color);
+    display: flex;justify-content: center;align-items: center;
+}
+.header-icon i{
+    font-size: 35px;
+}
+.header-i{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 60px;
+    top: 30px;
+    background-color: #2a2b3d;
+    border-radius: 50%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-i img{
+    width: 190px;
+    margin-left: 30px;
+}
+
+/*Main*/
+/*Acerca de mi*/
+#acerca-de-mi p{
+    color: var(--text-color);
+    text-align: center;
+}
+.tarjetasServicios {
+    width: 100%;
+    max-width: 370px;
+    height: 360px;
+    overflow: hidden;
+}
+.mov {
+    width: 225%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.uwu {
+    background-image: url(../assets/Vectores/Ellipse\ 14.svg);
+    background-size: 250px;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--title-color);
+    border-radius: 5px;
+}
+.uwu img{
+    width: 100px;
+    margin-bottom: 40px;
+}
+.uwu h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000;
+}
+.uwu p {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+/*Mis habilidades*/
+#mis-habilidades ul li{
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+progress{
+    width: 100%;
+    height: 15px;
+    color: var(--resalt-color);
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+progress::-webkit-progress-bar{
+    background: #fff;
+    border-radius: 10px;
+}
+progress::-webkit-progress-value{
+    background: #3fb6b2;
+    border-radius: 10px;
+}
+
+/*Mi portafolio*/
+#mi-portafolio > div {
+    width: 100%;
+    max-width: 360px;
+    overflow: hidden;
+}
+.carruselPorta {
+    width: 200%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all 1s ease-in-out;
+}
+.tarao {
+    width: 230px;
+    height: 200px;
+}
+.tarao img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Contacto*/
+.contacto-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.contacto-card{
+    background-image: url(../assets/Vectores/Ellipse\ 14.svg);
+    background-size: 170px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    width: 180px;
+    height: 160px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 0;
+}
+.contacto-card img{
+    width: 60px;
+}
+.contacto-card h3{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.contacto-card span{
+    font-size: 12px;
+    color: var(--text-color);
+}
+.contacto-card:nth-child(1){
+    margin-left: 20px;
+}
+.contacto-card:nth-child(2){
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #2a2b3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--resalt-color);
+    margin: 80px 0 0;
+}
