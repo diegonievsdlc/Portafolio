@@ -10,19 +10,19 @@
 </head>
 <body>
     <nav class="center">
-        <i id="btn-menu" class='bx bx-menu'></i>
+        <button id="btn-menu"><i class='bx bx-menu'></i></button>
         <div class="nav-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Acerca de mi</a></li>
-                <li><a href="#">Mis habilidades</a></li>
-                <li><a href="#">Mi portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
+            <ul id="nav-lonks-ul">
+                <li><a class="btn-nav active" href="#header">Home</a></li>
+                <li><a class="btn-nav" href="#acerca-de-mi">Servicios</a></li>
+                <li><a class="btn-nav" href="#servicios">Acerca de mi</a></li>
+                <li><a class="btn-nav" href="#mis-habilidades">Mis habilidades</a></li>
+                <li><a class="btn-nav" href="#mi-portafolio">Mi portafolio</a></li>
+                <li><a class="btn-nav" href="#contacto">Contacto</a></li>
             </ul>
         </div>
     </nav>
-    <header class="center">
+    <header id="header"class="center">
         <section class="header-title">
             <div class="header-title-1">
                 <h1>Soy <br><span>Diego</span></h1>
@@ -34,9 +34,9 @@
             <div class="header-title-2">
                 <h3><span>3 años</span><br>experiencia</h3>
                 <ul>
-                    <li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
-                    <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
-                    <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/diego-nieves-988139211/" target="_blank"><i class='bx bxl-linkedin' ></i></a></li>
+                    <li><a href="https://github.com/diegonievsdlc" target="_blank"><i class='bx bxl-github'></i></a></li>
+                    <li><a href="https://twitter.com/DiegoNi75678524" target="_blank"><i class='bx bxl-twitter' ></i></a></li>
                 </ul>
             </div>
         </section>
@@ -102,7 +102,8 @@
                     <img src="./assets/Logos- Imágenes/image 4.jpg" alt="" />
                   </div>
                 </div>
-              </div>
+            </div>
+            <a class="btn-cv" href="" download="cv.jpg">Descarga mi CV</a>
         </section>
         <section id="contacto" class="center2">
             <h2>Contacto</h2>
@@ -110,7 +111,7 @@
                 <div class="contacto-card">
                     <img src="./assets/íconos/phone 3.svg" alt="">
                     <h3>Numero de celular</h3>
-                    <span>+51924201779</span>
+                    <span>+51 912042779</span>
                 </div>
                 <div class="contacto-card">
                     <img src="./assets/íconos/mail 3.svg" alt="">
@@ -123,6 +124,6 @@
     <footer>
         <h4>Hecho con <i class='bx bxs-heart'></i> en Academlo</h4>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
-<script src="./js/script.js"></script>
 </html>

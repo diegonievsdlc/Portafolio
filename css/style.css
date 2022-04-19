@@ -14,6 +14,10 @@
     --title-color: #FFF;
     --text-color: #D1CECA;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 6vh;
+}
 body{
     background-color: var(--body-color);
 }
@@ -42,12 +46,20 @@ nav{
     justify-content: flex-end;
     align-items: center;
     z-index: 999;
+    background-color: var(--body-color);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#btn-menu{
+    border: none;
+    background-color: inherit;
 }
 nav i{
     margin-right: 10px;
     font-size: 24px;
     color: var(--title-color);
-    padding: 10px;
+    padding: 10px 10 0 ;
 }
 .nav-links{
     width: 100%;
@@ -71,6 +83,10 @@ nav i{
     padding: 15px 20px;
     transition: all 0.2s ease-in-out;
 } 
+.nav-links ul li .active{
+    color: var(--resalt-color);
+    border-bottom: 1px solid var(--resalt-color);
+}
 .nav-links ul li a:hover{
     color: var(--resalt-color);
 }
@@ -124,6 +140,11 @@ header{
     background-color: var(--title-color);
     border-radius: 50%;
     padding: 5px;
+    transition: all .3s ease-in-out;
+}
+.header-title-2 ul li a:hover{
+    background-color: var(--resalt-color);
+    color: var(--title-color);
 }
 .header-icons{
     width: 95%;
@@ -259,6 +280,19 @@ progress::-webkit-progress-value{
     width: 100%;
     height: 100%;
 }
+.btn-cv{
+    background-color: var(--resalt-color);
+    padding: 14px;
+    color: var(--title-color);
+    display: inline-block;
+    margin-top: 20px;    
+    border-radius: 25px;
+}
+.btn-cv:hover{
+    background-color: transparent;
+    color: var(--resalt-color);
+    border: 1px solid var(--resalt-color);
+}
 
 /*Contacto*/
 .contacto-cards{
@@ -312,4 +346,226 @@ footer{
     align-items: center;
     color: var(--resalt-color);
     margin: 80px 0 0;
+}
+
+/*Responsive*/
+@media (min-width: 768px) {
+    /*reciclables*/
+    .center{max-width: 750px;}
+    
+    /*Navegador*/
+    nav{
+        height: 5vh;
+        justify-content: flex-end;
+    }
+    #btn-menu{display: none;}
+    .nav-links{
+        height: 5vh;
+        position: static;
+        margin-right: 0;
+    }
+    .nav-links ul{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .nav-links ul li a{
+        font-size: 10px;
+        display: block;
+    } 
+
+    /*Header*/
+    header{height: 90vh;}
+    .header-title{
+        width: 85%;
+        padding-top: 20px;
+    }
+    .header-title-1 h1{font-size: 48px;}
+    .header-title-1 h1 span{
+        font-size: 70px;
+        border-top: 3px solid var(--title-color);
+    }
+    .header-title-1 h3{
+        width: 200px;
+        font-size: 20px;
+        border-top: none;
+    }
+    .header-title-2 h3{font-size: 28px;}
+    .header-title-2 ul li a{
+        font-size: 28px;
+        padding: 10px;
+    }
+    .header-icons{
+        width: 80%;
+        height: 90px;
+        gap: 40px;
+    }
+    .header-icon{
+        width: 80px;
+        height: 65px;
+        border-radius: 10px;
+    }
+    .header-icon i{font-size: 50px;}
+    .header-i{
+        width: 300px;
+        height: 300px;
+        left: 230px;
+        top: 60px;
+        align-items: flex-end;
+    }
+    .header-i img{
+        width: 240px;
+        margin-left: 10px;
+    }
+
+    /*Main*/
+    /*Acerca de mi*/
+    #acerca-de-mi p{
+        width: 550px;
+        margin: auto;
+    }
+
+    /*Servicios*/
+    .tarjetasServicios {
+        max-width: 650px;
+        height: 260px;
+        margin: auto;
+    }
+    .mov {
+        width: 100%;
+        gap: 30px;
+    }
+    .uwu {
+        background-size: 185px;
+        width: 185px;
+        height: 260px;
+    }
+    .uwu img{
+        width: 80px;
+        margin-bottom: 30px;
+    }
+    .uwu h3 {font-size: 20px;}
+    .uwu p {font-size: 15px;}
+
+    /*Mis habilidades*/
+    #mis-habilidades ul{
+        margin: auto;
+        width: 65%;
+    }
+    #mis-habilidades ul li{font-weight: 400;}
+
+    /*Mi portafolio*/
+    #mi-portafolio > div {max-width: 750px;}
+    .carruselPorta {width: 100%;}
+
+    /*Contacto*/
+    .contacto-cards{
+        width: 70%;
+        margin: auto;
+    }
+    .contacto-card{
+        background-size: 190px;
+        width: 200px;
+        height: 190px;
+    }
+    .contacto-card img{
+        width: 70px;
+    }
+    .contacto-card h3{
+        font-size: 20px;
+    }
+    .contacto-card span{
+        font-size: 13px;
+    }
+}
+@media (min-width: 1000px) {
+    /*reciclables*/
+    .center{max-width: 1100px;}
+    
+    /*Navegador*/
+    .nav-links ul li a{
+        font-size: 15px;
+    } 
+
+    /*Header*/
+    .header-title{
+        width: 100%;
+    }
+    .header-title-1 h1{font-size: 80px;}
+    .header-title-1 h1 span{
+        font-size: 140px;
+    }
+    .header-title-1 h3{
+        width: 400px;
+        font-size: 40px;
+    }
+    .header-title-2 h3{font-size: 40px;}
+    .header-title-2 ul li a{
+        font-size: 35px;
+        padding: 15px;
+    }
+    .header-icons{
+        width: 100%;
+        height: 140px;
+        gap: 70px;
+    }
+    .header-icon{
+        width: 150px;
+        height: 100px;
+    }
+    .header-icon i{font-size: 90px;}
+    .header-i{
+        width: 500px;
+        height: 500px;
+        left: 420px;
+    }
+    .header-i img{
+        width: 400px;
+        margin-left: 30px;
+    }
+
+    /*Main*/
+    /*Acerca de mi*/
+    #acerca-de-mi p{
+        width: 650px;
+    }
+
+    /*Servicios*/
+    .tarjetasServicios {
+        max-width: 850px;
+        height: 300px;
+    }
+    .mov {
+        width: 100%;
+        gap: 50px;
+    }
+    .uwu {
+        background-size: 230px;
+        width: 233px;
+        height: 300px;
+    }
+
+    /*Mi portafolio*/
+    #mi-portafolio > div {
+        max-width: 950px;
+        margin: auto;
+    }
+    .carruselPorta {
+        width: 100%;
+        height: 300px;
+    }
+    .tarao {
+        width: 270px;
+        height: 250px;
+    }
+
+    /*Contacto*/
+    .contacto-cards{
+        width: 60%;
+        margin: auto;
+    }
+    .contacto-card{
+        background-size: 250px;
+        width: 250px;
+        height: 240px;
+    }
 }
