@@ -335,10 +335,10 @@ footer{
     .center{max-width: 750px;}
     
     /*Navegador*/
-    nav{
+    /*nav{
         height: 5vh;
         justify-content: flex-end;
-    }
+    }*/
     #btn-menu{display: none;}
     .nav-links{
         height: 5vh;
@@ -389,13 +389,13 @@ footer{
     .header-i{
         width: 300px;
         height: 300px;
-        left: 230px;
+        /*left: 230px;
         top: 60px;
-        align-items: flex-end;
+        align-items: flex-end;*/
     }
     .header-i img{
         width: 240px;
-        margin-left: 10px;
+        /*margin-left: 10px;*/
     }
 
     /*Main*/
@@ -408,7 +408,7 @@ footer{
     /*Servicios*/
     .tarjetasServicios {
         max-width: 650px;
-        height: 260px;
+        /*height: 260px;*/
         margin: auto;
     }
     .mov {
@@ -461,7 +461,6 @@ footer{
 @media (min-width: 1000px) {
     /*reciclables*/
     html{
-        scroll-behavior: smooth;
         scroll-padding: 10vh;
     }
     .center{max-width: 1100px;}
@@ -478,7 +477,7 @@ footer{
     
     header{height: 89vh;}
     .header-title{
-        width: 80%;
+        width: 85%;
     }
     .header-title-1 h1{font-size: 80px;}
     .header-title-1 h1 span{
@@ -506,11 +505,12 @@ footer{
     .header-i{
         width: 500px;
         height: 500px;
-        left: 420px;
+        margin-bottom: -30px;
+        /*left: 420px;*/
     }
     .header-i img{
         width: 400px;
-        margin-left: 30px;
+        /*margin-left: 30px;*/
     }
 
     /*Main*/
@@ -522,7 +522,7 @@ footer{
     /*Servicios*/
     .tarjetasServicios {
         max-width: 850px;
-        height: 300px;
+        /*height: 300px;*/
     }
     .mov {
         width: 100%;
