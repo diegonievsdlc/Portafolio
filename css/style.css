@@ -185,7 +185,6 @@ header{
 .tarjetasServicios {
     width: 100%;
     max-width: 370px;
-    /*height: 360px;*/
     overflow: hidden;
 }
 .mov {
@@ -195,10 +194,6 @@ header{
 }
 .uwu {
     background: var(--title-color) url(../assets/Vectores/Ellipse\ 14.svg) no-repeat top;
-    /*background-image: url(../assets/Vectores/Ellipse\ 14.svg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-color: var(--title-color);*/
     background-size: 250px;
     width: 250px;
     height: 350px;
@@ -253,10 +248,8 @@ progress::-webkit-progress-value{
 }
 .carruselPorta {
     width: 200%;
-    /*height: 200px;*/
     display: flex;justify-content: center;align-items: center;
     gap: 20px;
-    /*transition: all 1s ease-in-out;*/
 }
 .tarao {
     width: 230px;
@@ -288,10 +281,6 @@ progress::-webkit-progress-value{
 }
 .contacto-card{
     background: #fff url(../assets/Vectores/Ellipse\ 14.svg) no-repeat top;
-    /*background-image: url(../assets/Vectores/Ellipse\ 14.svg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-color: #FFF;*/
     background-size: 170px;
     width: 180px;
     height: 160px;
@@ -335,10 +324,6 @@ footer{
     .center{max-width: 750px;}
     
     /*Navegador*/
-    /*nav{
-        height: 5vh;
-        justify-content: flex-end;
-    }*/
     #btn-menu{display: none;}
     .nav-links{
         height: 5vh;
@@ -389,13 +374,9 @@ footer{
     .header-i{
         width: 300px;
         height: 300px;
-        /*left: 230px;
-        top: 60px;
-        align-items: flex-end;*/
     }
     .header-i img{
         width: 240px;
-        /*margin-left: 10px;*/
     }
 
     /*Main*/
@@ -408,7 +389,6 @@ footer{
     /*Servicios*/
     .tarjetasServicios {
         max-width: 650px;
-        /*height: 260px;*/
         margin: auto;
     }
     .mov {
@@ -474,7 +454,6 @@ footer{
     } 
 
     /*Header*/
-    
     header{height: 89vh;}
     .header-title{
         width: 85%;
@@ -506,11 +485,9 @@ footer{
         width: 500px;
         height: 500px;
         margin-bottom: -30px;
-        /*left: 420px;*/
     }
     .header-i img{
         width: 400px;
-        /*margin-left: 30px;*/
     }
 
     /*Main*/
@@ -522,7 +499,6 @@ footer{
     /*Servicios*/
     .tarjetasServicios {
         max-width: 850px;
-        /*height: 300px;*/
     }
     .mov {
         width: 100%;
