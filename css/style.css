@@ -42,9 +42,7 @@ body{
 /*Navegador*/
 nav{
     height: 5.1vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: flex;justify-content: flex-end;align-items: center;
     z-index: 999;
     background-color: var(--body-color);
     position: -webkit-sticky;
@@ -55,11 +53,11 @@ nav{
     border: none;
     background-color: inherit;
 }
-nav i{
+#btn-menu i{
     margin-right: 10px;
     font-size: 24px;
     color: var(--title-color);
-    padding: 10px 10 0 ;
+    padding: 10px 10px 0 ;
 }
 .nav-links{
     width: 100%;
@@ -72,15 +70,12 @@ nav i{
 }
 .nav-links ul{
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    display: flex;flex-direction: column;justify-content: flex-start;align-items: center;
 }
 .nav-links ul li a{
     display: block;
     color: var(--title-color);
-    padding: 15px 20px;
+    padding: 10px 20px;
     transition: all 0.2s ease-in-out;
 } 
 .nav-links ul li .active{
@@ -94,21 +89,27 @@ nav i{
 /*Header*/
 header{
     height: 45vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex;flex-direction: column;align-items: center;justify-content: center;
 }
 .header-i-container{
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: flex;justify-content: center;
 }
-
+.header-i{
+    width: 250px;
+    height: 250px;
+    background-color: #2a2b3d;
+    border-radius: 50%;
+    z-index: -1;
+    display: flex;justify-content: center;align-items: flex-end;
+    margin-bottom: -10px;
+}
+.header-i img{
+    width: 190px;
+}
 .header-title{
     width: 90%;
-    display: flex;
-    justify-content: space-between;
+    display: flex;justify-content: space-between;
     position: absolute;
     top: 7vh;
 }
@@ -140,7 +141,7 @@ header{
 .header-title-2 ul{
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .header-title-2 ul li a{
     color: #2a2b3d;
@@ -159,9 +160,7 @@ header{
     height: 65px;
     border-radius: 10px;
     background-color: #2a2b3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;justify-content: center;align-items: center;
     gap: 20px;
 }
 .header-icon{
@@ -173,21 +172,6 @@ header{
 }
 .header-icon i{
     font-size: 35px;
-}
-.header-i{
-    width: 250px;
-    height: 250px;
-    background-color: #2a2b3d;
-    border-radius: 50%;
-    z-index: -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -10px;
-}
-.header-i img{
-    width: 190px;
-    margin-left: 30px;
 }
 
 /*Main*/
@@ -380,7 +364,7 @@ footer{
     } 
 
     /*Header*/
-    header{height: 90vh;}
+    header{height: 50vh;}
     .header-title{
         width: 85%;
         padding-top: 20px;
@@ -485,16 +469,25 @@ footer{
 }
 @media (min-width: 1000px) {
     /*reciclables*/
+    html{
+        scroll-behavior: smooth;
+        scroll-padding: 10vh;
+    }
     .center{max-width: 1100px;}
     
     /*Navegador*/
+    nav{
+        height: 10vh;
+    }
     .nav-links ul li a{
         font-size: 15px;
     } 
 
     /*Header*/
+    
+    header{height: 89vh;}
     .header-title{
-        width: 100%;
+        width: 80%;
     }
     .header-title-1 h1{font-size: 80px;}
     .header-title-1 h1 span{
