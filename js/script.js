@@ -9,11 +9,11 @@ let contadores = {
 
 btnMenu.addEventListener('click', () =>{
     if(contadores.cntNav){
-        containerLinks.style.marginRight = '-110%'
+        containerLinks.style.marginRight = '-100%'
         contadores.cntNav = false
     }
     else{
-        containerLinks.style.marginRight = '-2%'
+        containerLinks.style.marginRight = '0'
         contadores.cntNav = true
     }
 })
