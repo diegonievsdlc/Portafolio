@@ -266,11 +266,11 @@ progress::-webkit-progress-value{
     display: inline-block;
     margin-top: 20px;    
     border-radius: 25px;
+    border: 1px solid var(--resalt-color);
 }
 .btn-cv:hover{
     background-color: transparent;
     color: var(--resalt-color);
-    border: 1px solid var(--resalt-color);
 }
 
 /*Contacto*/
